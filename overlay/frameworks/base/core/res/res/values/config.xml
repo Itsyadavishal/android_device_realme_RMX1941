@@ -339,6 +339,7 @@
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
         <item>40</item>
+        <item>55</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
@@ -356,6 +357,9 @@
         <item>1</item>
         <item>7</item>
         <item>0</item>
+        <item>1</item>
+        <item>30</item> 
+        <item>31</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
@@ -364,6 +368,9 @@
         <item>10</item>
         <item>20</item>
         <item>30</item>
+        <item>20</item>
+        <item>35</item>
+        <item>50</item>
     </integer-array>
 
     <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
