@@ -84,6 +84,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.2.vendor \
     android.hardware.camera.device@3.3.vendor \
     android.hardware.camera.device@3.4.vendor \
+    GCamGOPrebuilt-V2 \
     android.hardware.camera.device@3.5.vendor \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4.vendor
@@ -250,6 +251,12 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Dex/ART optimization
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+USE_DEX2OAT_DEBUG := false
+
 # Properties
 -include $(DEVICE_PATH)/configs/props/vendor_logging_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -287,6 +294,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeDirac \
     RealmeParts
+
+# Preopt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
 
 # RenderScript
 PRODUCT_PACKAGES += \
