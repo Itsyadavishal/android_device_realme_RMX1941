@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 # Inherit some common Aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
 # Inherit from RMX1941 device makefile
 $(call inherit-product, device/realme/RMX1941/device.mk)
@@ -37,9 +37,14 @@ TARGET_SCREEN_WIDTH := 720
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
 
+# CipherOS additions
+CIPHER_UNOFFICIAL := true
+CIPHER_MAINTAINER := VISHAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1941
-PRODUCT_NAME := aosp_RMX1941
+PRODUCT_NAME := cipher_RMX1941
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme

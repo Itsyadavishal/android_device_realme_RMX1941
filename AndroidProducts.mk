@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_RMX1941.mk
+	$(LOCAL_DIR)/cipher_RMX1941.mk
 
 COMMON_LUNCH_CHOICES := \
-        aosp_RMX1941-eng \
-        aosp_RMX1941-user \
-        aosp_RMX1941-userdebug
+        cipher_RMX1941-eng \
+        cipher_RMX1941-user \
+        cipher_RMX1941-userdebug
