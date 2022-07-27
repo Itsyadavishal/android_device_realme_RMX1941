@@ -38,8 +38,6 @@ TARGET_SCREEN_WIDTH := 720
 TARGET_BOOT_ANIMATION_RES := 720
 
 # CipherOS additions
-CIPHER_UNOFFICIAL := true
-CIPHER_MAINTAINER := VISHAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions
